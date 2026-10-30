@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Order System | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">OrderHub</h2>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+            <h1>Welcome to OrderHub</h1>
+
+            <p>
+                A simple online ordering demo built to test
+                GitHub collaboration and API integration.
+            </p>
+
+            <a href="about.html" class="btn">Learn About Us</a>
+        </section>
+
+        <!-- Backend API Section -->
+        <section class="team-section">
+
+            <h2>Our Development Team</h2>
+
+            <p>
+                Click the button to fetch team information
+                from our Node.js backend.
+            </p>
+
+            <button id="fetchTeamBtn" class="btn">
+                Fetch Team Details
+            </button>
+
+            <p id="statusMessage" aria-live="polite">
+                Waiting for API request...
+            </p>
+
+            <div id="teamContainer" class="team-container"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 OrderHub | GitHub Collaboration Demo</p>
+    </footer>
+
+</body>
+
+</html>
